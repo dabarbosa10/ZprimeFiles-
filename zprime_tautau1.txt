@@ -1,0 +1,171 @@
+#========= VBF DM
+
+imax 1  number of channels
+jmax 6  number of backgrounds
+kmax 155 number of nuisance parameters (sources of systematic uncertainties)
+
+# we have just one channel and will use some dummy data
+bin tautau
+observation DATA
+
+bin            tautau	tautau	tautau	tautau	tautau	tautau	tautau 
+process        SIG      W+j     Z+j	ttb	VV	qcd	singlet 
+process        0        1       2	3	4	5	6
+rate           SIGNAL   WJETS   DYTOLL  TTBAR   DIBOSON QCD     SIGT 
+
+lumi    lnN    1.028   1.028   1.028	1.028	1.028	-       1.028
+ISR00	lnN    -	-	-	-	-	-	-
+ISR01	lnN    -	-	-	-	-	-	-
+ISR02	lnN    -	-	-	-	-	-	-
+ISR03	lnN    -	-	-	-	-	-	-
+ISR04	lnN    -	-	-	-	-	-	-
+ISR05	lnN    -	-	-	-	-	-	-
+ISR06	lnN    -	-	-	-	-	-	-
+PDF00	lnN    1.065	-	-	-	-	-	-
+PDF01	lnN    -	1.035	-	-	-	-	-
+PDF02	lnN    -	-	1.035	-	-	-	-
+PDF03	lnN    -	-	-	1.035	-	-	-
+PDF04	lnN    -	-	-	-	1.035	-	-
+PDF05	lnN    -	-	-	-	-	-	-
+PDF06	lnN    -	-	-	-	-	-	1.028
+STMC00	lnN    -	-	-	-	-	-	-
+STMC01	lnN    -	-	-	-	-	-	-
+STMC02	lnN    -	-	-	-	-	-	-
+STMC03	lnN    -	-	-	-	-	-	-
+STMC04	lnN    -	-	-	-	-       -	-
+STMC05	lnN    -	-	-	-	-	-	-
+STMC06	lnN    -	-	-	-	-	-	-
+STDA00	lnN    -	-	-	-	-	-	-
+STDA01	lnN    -	-	-	-	-	-	-
+STDA02	lnN    -	-	-	-	-	-	-
+STDA03	lnN    -	-	-	-	-	-	-
+STDA04	lnN    -	-	-	-	-	-	-
+STDA05	lnN    -	-	-	-	-	-	-
+STDA06	lnN    -	-	-	-	-	-	-
+Trig00	lnN    1.03	1.03	1.03	1.03	1.03	-	1.03
+Trig01	lnN    -	-	-	-	-	-	-
+Trig02	lnN    -	-	-	-	-	-	-
+Trig03	lnN    -	-	-	-	-	-	-
+Trig04	lnN    -	-	-	-	-	-	-
+Trig05	lnN    -	-	-	-	-	-	-
+Trig06	lnN    -	-	-	-	-	-	-
+MuID00	lnN    -	-	-	-	-	-	-
+MuID01	lnN    -	-	-	-	-	-	-
+MuID02	lnN    -	-	-	-	-	-	-
+MuID03	lnN    -	-	-	-	-	-	-
+MuID04	lnN    -	-	-	-	-	-	-
+MuID05	lnN    -	-	-	-	-	-	-
+MuID06	lnN    -	-	-	-	-	-	-
+ElID00	lnN    1.05	-	-	-	-	-	-
+ElID01	lnN    -	-	-	-	-	-	-
+ElID02	lnN    -	-	-	-	-	-	-
+ElID03	lnN    -	-	-	-	-	-	-
+ElID04	lnN    -	-	-	-	-	-	-
+ElID05	lnN    -	-	-	-	-	-	-
+ElID06	lnN    -	-	-	-	-	-	-
+TaID00  lnN    -        -       -       -       -       -       -
+TaID01  lnN    -        -       -       -       -       -       -
+TaID02  lnN    -        -       -       -       -       -       -
+TaID03  lnN    -        -       -       -       -       -       -
+TaID04  lnN    -        -       -       -       -       -       -
+TaID05  lnN    -        -       -       -       -       -       -
+TaID06  lnN    -        -       -       -       -       -       -
+bID00	lnN    1.01	-	-	-	-	-	-
+bID01	lnN    -	1.01	1.01	-	-	-	-
+bID02	lnN    -	-	-	-	-	-	-
+bID03	lnN    -	-	-	1.1	-	-	-
+bID04	lnN    -	-	-	-	1.01	-	-
+bID05	lnN    -	-	-	-	-	-	-
+bID06	lnN    -	-	-	-	-	-	1.1
+EES00	lnN    1.02	-	-	-	-	-	-
+EES01	lnN    -	-	-	-	-	-	-
+EES02	lnN    -	-	-	-	-	-	-
+EES03	lnN    -	-	-	-	-	-	-
+EES04	lnN    -	-	-	-	-	-	-
+EES05	lnN    -	-	-	-	-	-	-
+EES06	lnN    -	-	-	-	-	-	-
+MMS00	lnN    -	-	-	-	-	-	-
+MMS01	lnN    -	-	-	-	-	-	-
+MMS02	lnN    -	-	-	-	-	-	-
+MMS03	lnN    -	-	-	-	-	-       -
+MMS04	lnN    -	-	-	-	-	-	-
+MMS05	lnN    -	-	-	-	-	-	-
+MMS06	lnN    -	-	-	-	-	-	-
+TES00	lnN    1.05	-	-	-	-	-	-
+TES01	lnN    -	-	-	-	-	-	-
+TES02	lnN    -	-	-	-	-	-	-
+TES03	lnN    -	-	-	-	-	-	-
+TES04	lnN    -	-	-	-	-	-	-
+TES05	lnN    -	-	-	-	-	-	-
+TES06	lnN    -	-	-	-	-	-	-
+JES00	lnN    -	-	-	-	-	-	-
+JES01	lnN    -	-	-	-	-	-	-
+JES02	lnN    -	-	-	-	-	-	-
+JES03	lnN    -	-	-	-	-	-	-
+JES04	lnN    -	-	-	-	-	-	-
+JES05	lnN    -	-	-	-	-	-	-
+JES06	lnN    -	-	-	-	-	-	-
+Close00	lnN    -	-	-	-	-	-	-
+Close01	lnN    -	-	-	-	-	-	-
+Close02	lnN    -	-	-	-	-	-	-
+Close03	lnN    -	-	-	-	-	-	-
+Close04	lnN    -	-	-	-	-	-	-
+Close05	lnN    -	-	-	-	-	1.496	-
+Close06	lnN    -	-	-	-	-	-	-
+ttbar00	lnN    -	-	-	-	-	-	-
+ttbar01	lnN    -	-	-	-	-	-	-
+ttbar02	lnN    -	-	-	-	-	-	-
+ttbar03	lnN    -	-	-	1.047	-	-	-
+ttbar04	lnN    -	-	-	-	-	-	-
+ttbar05	lnN    -	-	-	-	-	-	-
+ttbar06	lnN    -	-	-	-	-	-	-
+dy00    lnN    -        -       -       -       -       -       -
+dy01    lnN    -        -       -       -       -       -       -
+dy02 	lnN    -        -       -       -       -       -       -
+dy03 	lnN    -        -       -       -       -       -       -
+dy04 	lnN    -        -       -       -       -       -       -
+dy05 	lnN    -        -       -       -       -       -       -
+dy06 	lnN    -        -       -       -       -       -       -
+wj00 	lnN    -        -       -       -       -       -       -
+wj01 	lnN    -        -       -       -       -       -       -
+wj02 	lnN    -        -       -       -       -       -       -
+wj03 	lnN    -        -       -       -       -       -       -
+wj04 	lnN    -        -       -       -       -       -       -
+wj05 	lnN    -        -       -       -       -       -       -
+wj06 	lnN    -        -       -       -       -       -       -
+tt00 	lnN    -        -       -       -       -       -       -
+tt01 	lnN    -        -       -       -       -       -       -
+tt02 	lnN    -        -       -       -       -       -       -
+tt03 	lnN    -        -       -       -       -       -       -
+tt04 	lnN    -        -       -       -       -       -       -
+tt05 	lnN    -        -       -       -       -       -       -
+tt06 	lnN    -        -       -       -       -       -       -
+st00 	lnN    -        -       -       -       -       -       -
+st01 	lnN    -        -       -       -       -       -       -
+st02 	lnN    -        -       -       -       -       -       -
+st03 	lnN    -        -       -       -       -       -       -
+st04 	lnN    -        -       -       -       -       -       -
+st05 	lnN    -        -       -       -       -       -       -
+st06 	lnN    -        -       -       -       -       -       -
+qcd00 	lnN    -        -       -       -       -       -       -
+qcd01 	lnN    -        -       -       -       -       -       -
+qcd02 	lnN    -        -       -       -       -       -       -
+qcd03 	lnN    -        -       -       -       -       -       -
+qcd04 	lnN    -        -       -       -       -       -       -
+qcd05 	lnN    -        -       -       -       -       -       -
+qcd06 	lnN    -        -       -       -       -       -       -
+vv00 	lnN    -        -       -       -       -       -       -
+vv01 	lnN    -        -       -       -       -       -       -
+vv02 	lnN    -        -       -       -       -       -       -
+vv03 	lnN    -        -       -       -       -       -       -
+vv04 	lnN    -        -       -       -       -       -       -
+vv05 	lnN    -        -       -       -       -       -       -
+vv06 	lnN    -        -       -       -       -       -       -
+sgn00 	lnN    -        -       -       -       -       -       -
+sgn01 	lnN    -        -       -       -       -       -       -
+sgn02 	lnN    -        -       -       -       -       -       -
+sgn03 	lnN    -        -       -       -       -       -       -
+sgn04 	lnN    -        -       -       -       -       -       -
+sgn05 	lnN    -        -       -       -       -       -       -
+sgn06 	lnN    -        -       -       -       -       -       -
+#=============================================
